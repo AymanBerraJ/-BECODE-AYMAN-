@@ -170,5 +170,126 @@ let multiplier = parse1 * parse2;
 alert(`${sum}
 ${soustraire}
 ${diviser}
-${multiplier}`); */
+${multiplier}`);
+
+// question A
+true && !false;  // true
+
+// question B
+false && true; // false
+
+// question C
+!false && !false; // true
+
+// question D
+5 > 3 && !(2 > 1); // false
+
+// question E
+true && !(1 == "1"); // false
+
+// question F
+5 !== "5" || false; // true
+
+true && undefined; // returns false
+///////////////////////////////////////////////////////////////////////////////////////
+// QUESTION 1
+alert(!0 && true); // true
+
+// QUESTION 2
+const a = null;
+const b = undefined;  
+const c = 4;
+
+alert((!a && b) || c); // true
+
+// QUESTION 3
+
+alert(a == b && c); // true
+
+// QUESTION 4
+
+!b && "Hello" && c; // false
+//////////////////////////////////////////////////////////////////////////////////////
+
+// Normal IF ELSE
+
+if (laundry === "dirty") {
+    cleanLaundry();
+} else {
+    watchTv();
+}
+
+  // With ternary operator :
+
+laundry === "dirty" ? cleanLaundry() : watchTv(); // permet d'abreger le IF/ELSE
+
+
+let pref = window.prompt("Qu'elle animal preferes tu entre le chat et le chien ?");
+
+
+if (pref === "chat") {
+    alert(`Son animal préferer est le ${pref}`);
+}else if(pref == "chien"){
+    alert(`Son animal preferer est le ${pref}`)
+}else{
+    alert(`Le mot entré n'est pas bon`)
+}
+
+
+const mystery = "PERMISS7ON"; //CHANGE THIS VALUE TO MAKE THE CONDITIONAL BELOW TRUE
+
+// LEAVE THIS CODE ALONE! (pretty please)
+if (mystery[0] === "P" && mystery.length > 5 && mystery.indexOf("7") !== -1) {
+console.log("YOU GOT IT!!!");
+} else {
+console.log("TRY AGAIN");
+}
+
+
+let age = window.prompt("How old are you ?");
+
+if (age < 18) {
+    alert("Sorry, you are too young to drive this car. Powering off")
+} else if(age == 18) {
+    alert("Congratulations on your first year of driving. Enjoy the ride!");
+} else{
+    alert("Powering On. Enjoy the ride!");
+}
+
+let fruit = window.prompt("Quelle est votre fruit preferer ?");
+
+if (fruit == "bananas") {
+    alert("Oh, I like bananas as well !")
+} else if (fruit == "strawberry") {
+    alert("Oh, I LOVE strawberry !")
+}else if(fruit == "grape"){
+    
+    let couleur = window.prompt("Preferes tu la mauve ou la verte ?");
+    
+    if (couleur == "verte") {
+        alert("les vertes sont passable");
+    }else if(couleur == "mauve"){
+        alert("je n'aime pas du tout les mauves");
+    }
+
+}else{
+    alert("La reponse donner n'est pas bonne")
+}
+
+// To make an empty array
+const students = [];
+
+// An array of strings
+const colors = ["orange", "red", "yellow"];
+
+// An array of numbers
+const lottoNumbers = [19, 22, 56, 12, 51];
+
+// A mixed array
+const stuff = [true, 68, "cat", null];
+
+https://www.programiz.com/javascript/library/array (Les différentes methode d'array)
+*/
+
+
 
