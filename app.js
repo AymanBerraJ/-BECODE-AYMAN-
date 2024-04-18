@@ -69,3 +69,36 @@ let euro1 = 132 * tauxD;
 
 console.log("Pour avoir 50 dollar, nous avons besoin de " + euro + " et pour 132 dollar nous avons besoinn de " + euro1 );
 
+var a = "3";
+var b = "8";
+
+a = "8";
+b = "3";
+
+console.log("a is " + a);
+console.log("b is " + b);
+
+
+const nameA = "Ayman Berraj Jueid";
+const age = 24;
+
+console.log("il s'appelle " + nameA + " et nous savons qu'il a " + age);
+console.log(`il s'appelle ${nameA} et nous savons qu'il a ${age}.`);
+
+let nb1 = 20;
+let nb2 = 4;
+
+let somme = `il a bel est bien ${nb1+nb2} ans `
+console.log(somme);
+
+console.log(nameA.length);
+console.log(nameA.slice(0, 6));
+console.log(nameA.replace(" ", "-"));
+
+let sentence = "je suis un(e) homme";
+sentence = sentence.replace("homme", "femme");
+console.log(sentence);
+
+//.toUpperCase(), .toLowerCaser(), .slice(), .replace(), .indexOf(), .lastIndexOf(), .trim() METHODE
+// '', "", `` Différente façon d'y intégrer un string ou un char
+
