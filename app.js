@@ -90,7 +90,7 @@ let nb2 = 4;
 
 let somme = `il a bel est bien ${nb1+nb2} ans `
 console.log(somme);
-
+d
 console.log(nameA.length);
 console.log(nameA.slice(0, 6));
 console.log(nameA.replace(" ", "-"));
