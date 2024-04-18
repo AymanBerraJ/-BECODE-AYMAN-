@@ -1,3 +1,4 @@
+////////////////////////////////////////////////////////THEORIE FAIS AUPARAVANT//////////////////////////////////////////////////////////////////////
 /* alert(5.45)
 alert("Viens habibi")
 alert("Non je rigole")
@@ -54,7 +55,9 @@ switch (mom) {
     default:
         alert("Rien de prévu pour maintenant")
         break;
-} */
+} 
+
+//////////////////////////////////////////////////DEBUT DES EXOS//////////////////////////////////////////////////////////////////:
 
 console.log("I am in the console");
 
@@ -134,5 +137,38 @@ let string = "123.98";
 console.log(parseInt(string));
 console.log(parseFloat(string));
 
+const nom = prompt("what is your name ?")
 
+alert(`Welcome ${nom} !`);
+
+var prix = window.prompt("Quelle est le prix de l'objet acheté HTVA")
+var parse = parseInt(prix);
+var tva = 0.21;
+
+var prixTVA = parse + (parse * tva);
+
+alert(`Le prix HTVA est de ${prix} et en y ajoutant la TVA, elle reviendra à ${prixTVA}`);
+
+let rayon = window.prompt("Quelle est le rayon du cercle ?");
+parse = parseInt(rayon);
+
+let formule = (parse * parse)* Math.PI;
+
+
+alert(`La surface du cercle est de ${formule}`);
+
+let nombre = window.prompt("Entrez votre premier nombre :");
+let parse1 = parseFloat(nombre);
+let nombre2 = window.prompt("Entrez votre deuxieme nombre :");
+let parse2 = parseFloat(nombre2);
+
+let sum = parse1 + parse2;
+let soustraire = parse1 - parse2;
+let diviser = parse1 / parse2;
+let multiplier = parse1 * parse2;
+
+alert(`${sum}
+${soustraire}
+${diviser}
+${multiplier}`); */
 
