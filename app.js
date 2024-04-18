@@ -90,7 +90,7 @@ let nb2 = 4;
 
 let somme = `il a bel est bien ${nb1+nb2} ans `
 console.log(somme);
-d
+
 console.log(nameA.length);
 console.log(nameA.slice(0, 6));
 console.log(nameA.replace(" ", "-"));
@@ -101,4 +101,38 @@ console.log(sentence);
 
 //.toUpperCase(), .toLowerCaser(), .slice(), .replace(), .indexOf(), .lastIndexOf(), .trim() METHODE
 // '', "", `` Différente façon d'y intégrer un string ou un char
+
+
+// DON'T TOUCH THIS LINE!
+
+const message = "    TASTE THE RAINBOW!  "; //DON'T CHANGE THIS LINE PLEASE!
+let whisper = message.toLowerCase().trim();
+console.log(whisper);
+
+// YOUR CODE BELOW THIS LINE:
+
+let mot = window.prompt("Entrez une suite de caractéres: ")
+console.log(mot[mot.length-1]);
+
+// DON'T TOUCH THIS LINE! (please)
+const word = "skateboard"; //Don't change this line!
+
+let facialHair = word.slice(5, 10).replace("o", "e");
+
+console.log(facialHair);
+
+// YOUR CODE BELOW THIS LINE:
+
+let entier = Math.round(Math.random() * 10);
+console.log(entier);
+let virgule = Math.round(Math.random() * 5) + 1;
+console.log(virgule);
+
+// .ceil => arrondi au nombre entier au dessus, .floor => arrondi au nombre entier en dessous, .round => arrondi au nombre entier le plus proche, .random => un nombre aléatoire
+
+let string = "123.98";
+console.log(parseInt(string));
+console.log(parseFloat(string));
+
+
 
