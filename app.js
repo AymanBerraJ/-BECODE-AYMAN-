@@ -367,12 +367,112 @@ console.log(leaderboard);
 // }
 
 
-for (let i = 0; i <= 20; i) {
-    if (i % 2 == 0) {
-        console.log(i);   
-    }
-}
+// for (let i = 1; i <= 20; i++) {
+//     if (i % 2 == 0) {                       MODULO
+//         console.log(i);   
+//     }
+// }
 // }
 // for (let i = 2; i <= 20; i+=2) {
-//     console.log(i);
+//     console.log(i);                         CALCUL AVEC i+=2
 // }
+
+// for (let i = 0; i <= 20; i++) {
+
+//     if (i % 2 == 1) {
+//         console.log(i);                     MODULO
+//     }
+    
+// }
+
+// for (let i = 100; i >= 0; i--) {
+
+//     if (i % 10 == 0) {
+//         console.log(i);                     MODULO
+//     }
+    
+// }
+
+// for (let i = 25; i >= 0 ; i--) {
+//     if (i % 5 == 0) {
+//         console.log(i);
+//     }
+    
+// }
+
+// for (let i = 1; i <= 3 ; i++) {
+
+//     console.log(Math.pow(10, i));
+
+// }
+
+// const colors = [1,2,3,4,5]
+// for (let i = 0; i <= colors.length - 1; i++) {
+//     console.log(colors[i]);
+// }                                                                       DIFFERENT
+
+// for (let i = 0; i < colors.length; i++) {
+//     console.log(colors[i]);
+// }
+
+// const animals = ["lion", "pangolim", "zebra", "dog", "cat", "bird"];
+
+// for(let i = 5; i > 0; i--){
+
+//     console.log(animals[i]);
+    
+// }
+
+// const users = [
+//     {
+//     firstName: "Vito",
+//     lastName: "Corleone",
+//     },
+//     {
+//     firstName: "William",
+//     lastName: "Wallace",
+//     },
+//     {
+//     firstName: "Harry",
+//     lastName: "Potter",
+//     },
+//     {
+//     firstName: "Amadeus",
+//     lastName: "Mozart",
+//     },
+//     {
+//     firstName: "Barack",
+//     lastName: "Obama",
+//     },
+// ];
+
+// for(let i = 0; i <= users.length-1; i++){
+
+//     console.log(i+1 + ". My full name is " + users[i].firstName + " " + users[i].lastName);
+// }
+
+// const seatingChart = [
+//     ["Colas", "Benoit", "Elodie"],
+//     ["Sola", "Irina", "Antonino", "Eli"],
+//     ["John", "Maryna", "Naike", "Fabrice"],
+//   ];
+
+//   // I can use nested loops to do that :
+
+//   for (let i = 0; i < seatingChart.length; i++) {
+//     console.log("ROW #" +(i+1));
+//     const row = seatingChart[i]; // I created a variable "row" just to be cleaner in the declaration of the next loop. You could put seatingChart[i].length, it would be the same thing
+//     for (let j = 0; j < row.length; j++) {
+//       console.log(row[j]);
+//     }
+//   }
+
+
+let variable = parseInt(prompt("Donnez une vitesse maximum: "));
+while (!variable && nb1 <=5) {
+    variable = parseInt(prompt("Donne un nombre cette fois-ci: "));
+}
+let nombre =Math.floor(Math.random()*variable)+1;
+
+
+
