@@ -469,10 +469,7 @@ console.log(leaderboard);
 
 
 let variable = parseInt(prompt("Donnez une vitesse maximum: "));
-while (!variable && nb1 <=5) {
+while (!variable) {
     variable = parseInt(prompt("Donne un nombre cette fois-ci: "));
 }
 let nombre =Math.floor(Math.random()*variable)+1;
-
-
-
