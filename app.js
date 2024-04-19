@@ -289,7 +289,90 @@ const lottoNumbers = [19, 22, 56, 12, 51];
 const stuff = [true, 68, "cat", null];
 
 https://www.programiz.com/javascript/library/array (Les différentes methode d'array)
-*/
 
 
+const leaderboard = ["Harry", "Lua", "Hermione", "Bellatrix"]; //DON'T TOUCH THIS LINE!
 
+// YOUR CODE BELOW HERE:
+
+leaderboard.splice(1, 1, "luna");
+leaderboard.splice(3, 1, "Draco");
+console.log(leaderboard);
+ */
+
+// const initialArray = [
+//     null, //0
+//     true,//1
+//     ["Apple", "two", undefined], // 2/ 0.1.2
+//     false,//3
+//     ["three", "BeCode"], // 4/ 0.1
+//     4, //5
+//     "I am a big bad wolf", //6
+//     ["one"], // 7/ 0
+// ];
+
+// // let array = initialArray.filter(initialArray[7][0] + initialArray[2][1] + initialArray[4][0]);
+
+// const reunir = [].concat(...initialArray);
+// const chiffre = reunir.filter(chiffre => chiffre == "one" || chiffre == "two" || chiffre == "three");
+// chiffre.splice(2,1);
+// chiffre.unshift("One");
+// console.log(chiffre);
+
+// const planets = ["The Moon", "Venus", "Earth", "Mars", "Jupiter"]; //DO NOT TOUCH THIS LINE!
+
+// YOUR CODE GOES BELOW THIS LINE:
+
+// planets.splice(0, 1);
+// planets.push("Saturn");
+// planets.unshift("Mercury");
+// console.log(planets);
+// ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn"]
+
+// const product = {
+//     name : "Iphone 15",
+//     inStock : true,
+//     price :1249.90,
+//     includePackage : ["case", "earphones", "charger"]
+
+// }
+// console.log(product.includePackage[1]);
+
+//PLEASE DON'T TOUCH THIS LINE!
+// const restaurant = {
+//     name: "Ichiran Ramen",
+//     address: `${Math.floor(Math.random() * 100) + 1} Johnson Ave`,
+//     city: "Brooklyn",
+//     state: "NY",
+//     zipcode: "11206",
+// };
+
+//   //YOUR CODE GOES DOWN HERE:
+
+
+// const fullAdress = restaurant.address + ", "+ restaurant.city +", "+ restaurant.state +" "+ restaurant.zipcode;
+
+// console.log(fullAdress);
+
+//////////////////////////////////////////LOOPS////////////////////////////////////////////
+
+// let mot = "hello";
+// let i = 0;
+
+// while (i < 10) {
+
+//     console.log(mot);
+//     i = i + 1;
+    
+// }
+
+
+for (let i = 0; i <= 20; i) {
+    if (i % 2 == 0) {
+        console.log(i);   
+    }
+}
+// }
+// for (let i = 2; i <= 20; i+=2) {
+//     console.log(i);
+// }
