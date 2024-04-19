@@ -466,10 +466,33 @@ console.log(leaderboard);
 //       console.log(row[j]);
 //     }
 //   }
+////////////////////////////////////////////////////////////////////////////////////////////////EXO WHILE NOMBRE MAXIMUM//////////////////////////////////////////////////
 
+// let variable = parseInt(prompt("Donnez une vitesse maximum "));
+// while (!variable) {
+//     variable = parseInt(prompt("Entrez une valeur valable "));
+// }
+// let nombre = Math.floor(Math.random()*variable)+1;
+// console.log(nombre);
 
-let variable = parseInt(prompt("Donnez une vitesse maximum: "));
-while (!variable) {
-    variable = parseInt(prompt("Donne un nombre cette fois-ci: "));
-}
-let nombre =Math.floor(Math.random()*variable)+1;
+// let devine = parseInt(prompt("Essayez de deviner le nombre"));
+
+// while (!devine) {
+//     devine = parseInt(prompt("Rentrez une valeur valable "));
+
+// }
+
+// while (devine != nombre) {
+    
+//     if(devine > nombre){
+//         alert("Votre nombre est plus haut que le nombre ");
+//     }else if(devine < nombre){
+//         alert("Votre nombre est plus bas que le nombre");
+//     }else if(devine == nombre){
+//         alert("Bien joué, Vous avez trouvé le bon nombre !");
+//     }else{
+//         alert("Veuillez recommencez");
+//     }
+//     devine = parseInt(prompt("Essayez à nouveau !"))
+// }
+// alert("Bien joué à vous !");
