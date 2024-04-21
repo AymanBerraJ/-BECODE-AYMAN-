@@ -466,7 +466,7 @@ console.log(leaderboard);
 //       console.log(row[j]);
 //     }
 //   }
-////////////////////////////////////////////////////////////////////////////////////////////////EXO WHILE NOMBRE MAXIMUM//////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////EXO WHILE NOMBRE MAXIMUM////////////////////////
 
 // let variable = parseInt(prompt("Donnez une vitesse maximum "));
 // while (!variable) {
@@ -496,3 +496,36 @@ console.log(leaderboard);
 //     devine = parseInt(prompt("Essayez à nouveau !"))
 // }
 // alert("Bien joué à vous !");
+///////////////////////////////////////////////////////////////FOR IN ET FOR OF//////////////////////////////////////////////////////////////
+// const Number = [1,2,3,4,5]
+
+// for (const chiffre of Number) {
+//     console.log(`Donne moi ton chiffre:  ${chiffre}`);
+// }
+
+// const myArray = ['Ayman','chaimae', 'moncef'];
+
+// for (const nom of myArray) {
+//     console.log(`Mon prénom est ${nom}`);
+// }
+
+// const variable = 'ayman';
+
+// for (const test of variable) {
+//     console.log(test.toUpperCase().repeat(1));
+// }
+
+// const maFamille = {
+//     frere : 'moncef',
+//     soeur : 'chaimae',
+//     pere : 'ahmed',
+//     mere : 'nadia'
+// }
+
+// for (const clef in maFamille) {
+
+//     console.log(`Dans ma famille il y a mon/ma ${clef} et son prénom est ${maFamille[clef]} `);
+// }
+
+
+const todo = 
