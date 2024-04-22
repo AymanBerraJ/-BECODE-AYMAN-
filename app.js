@@ -311,7 +311,7 @@ console.log(leaderboard);
 //     ["one"], // 7/ 0
 // ];
 
-// // let array = initialArray.filter(initialArray[7][0] + initialArray[2][1] + initialArray[4][0]);
+// let array = initialArray.filter(initialArray[7][0] + initialArray[2][1] + initialArray[4][0]);
 
 // const reunir = [].concat(...initialArray);
 // const chiffre = reunir.filter(chiffre => chiffre == "one" || chiffre == "two" || chiffre == "three");
@@ -550,11 +550,12 @@ while (mot) {
         }
         }
     }
-    let ensemble = ``;
+
+    let numeroter = ``;
 
     if (mot == "list") {
         while (mot != "0") {
-            ensemble = '';
+            numeroter = '';
             let num = 1;
             mot = prompt(`Appuyez sur 0 pour quitter la liste sinon appuyez sur n'importe quelle touche pour voir la liste TODO`);
             if (mot == "0") {
@@ -562,26 +563,30 @@ while (mot) {
             }else{
                 for (const tableau of liste) {
                     
-                    ensemble = ensemble + (`\n${num}. ${tableau}`);
+                    numeroter = numeroter + (`\n${num}. ${tableau}`);
                     num++;
                     
                 }
-                alert(`********* TODO LIST ********* \n${ensemble}`);
-                console.log(ensemble);
+                console.log(`********* TODO LIST ********* \n${numeroter}`);
             }
         }
     }
 
     if (mot == "delete") {
-        mot = parseInt(prompt(`Appuyez sur 0 pour revenir au menu principal, sinon choisissez le numéro de la tache que vous voulez supprimer.`));
-        while (mot != 0) {
-            if (mot == 0) {
-                alert(`Vous sortez de la liste`);
+        let nb = parseInt(prompt(`Appuyez sur 0 pour revenir au menu principal, sinon choisissez le numéro de la tache que vous voulez supprimer.`));
+
+        while (nb != 0) {
+            if (nb == 0) {
+                alert(`Vous sortez du delete`);
+            }else if(nb > 0 && nb <= liste.length){
+
+                numeroter = liste.splice(nb-1,1);
+                console.log(liste);
+                
             }else{
-                del = supp;
-                alert(`La tâche que vous avez supprimer est ${del}`);
-                del = parseInt(prompt(`Quelle tâche voulez vous supprimer? Entrez le numéro de la tâche.`));
+                console.log(``);
             }
+            nb = parseInt(prompt(`Appuyez sur 0 pour revenir au menu principal, sinon choisissez le numéro de la tache que vous voulez supprimer.`));
         }
     }
 
