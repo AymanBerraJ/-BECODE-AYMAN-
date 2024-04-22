@@ -532,9 +532,9 @@ const liste = [];
 
 let mot = prompt(`Que voulez-vous faire? Choisissez entre: \n- new pour ajouter \n- list pour voir toute la liste \n- delete pour supprimer une tâche \n- quit pour quitter le programme `);
 
-while (mot) {
+while (mot && mot != "quit") {
 
-    while (mot != "new" && mot != "list" && mot != "delete" && mot != "quit" ) {
+    while (mot != "new" && mot != "list" && mot != "delete") {
         mot = prompt(`Entrez l'un des mots que nous vous avons demandé. \n- new pour ajouter \n- list pour voir toute la liste \n- delete pour supprimer une tâche \n- quit pour quitter le programme`)
     }
 
@@ -590,11 +590,10 @@ while (mot) {
         }
     }
 
-    if (mot == "quit") {
-        alert(`Vous êtes sortis du programme, à Bientôt !`);
-    }
-
     mot = prompt(`Que voulez-vous faire? Choisissez entre: \n- new pour ajouter \n- list pour voir toute la liste \n- delete pour supprimer une tâche \n- quit pour quitter le programme `);
+}
+if (mot == "quit") {
+    alert(`Vous êtes sortis du programme, à Bientôt !`);
 }
 
 // while (mot) {
