@@ -528,4 +528,81 @@ console.log(leaderboard);
 // }
 
 
-const todo = 
+const liste = [];
+
+let mot = prompt(`Que voulez-vous faire? Choisissez entre: \n- new pour ajouter \n- list pour voir toute la liste \n- delete pour supprimer une tâche \n- quit pour quitter le programme `);
+
+while (mot) {
+
+    while (mot != "new" && mot != "list" && mot != "delete" && mot != "quit" ) {
+        mot = prompt(`Entrez l'un des mots que nous vous avons demandé. \n- new pour ajouter \n- list pour voir toute la liste \n- delete pour supprimer une tâche \n- quit pour quitter le programme`)
+    }
+
+    if (mot == "new") {
+        while (mot != "0") {
+        mot = prompt(`Que voulez vous ajouter à la liste ?`);
+        if (mot == "0") {
+            alert(`Vous sortez de la liste`);
+        }else{
+            console.log(mot);
+            liste.push(mot);
+            alert(`Vous avez ajouter à la liste: ${mot}`)
+        }
+        }
+    }
+    let ensemble = ``;
+
+    if (mot == "list") {
+        while (mot != "0") {
+            ensemble = '';
+            let num = 1;
+            mot = prompt(`Appuyez sur 0 pour quitter la liste sinon appuyez sur n'importe quelle touche pour voir la liste TODO`);
+            if (mot == "0") {
+                alert(`Vous sortez de la liste`);
+            }else{
+                for (const tableau of liste) {
+                    
+                    ensemble = ensemble + (`\n${num}. ${tableau}`);
+                    num++;
+                    
+                }
+                alert(`********* TODO LIST ********* \n${ensemble}`);
+                console.log(ensemble);
+            }
+        }
+    }
+
+    if (mot == "delete") {
+        mot = parseInt(prompt(`Appuyez sur 0 pour revenir au menu principal, sinon choisissez le numéro de la tache que vous voulez supprimer.`));
+        while (mot != 0) {
+            if (mot == 0) {
+                alert(`Vous sortez de la liste`);
+            }else{
+                del = supp;
+                alert(`La tâche que vous avez supprimer est ${del}`);
+                del = parseInt(prompt(`Quelle tâche voulez vous supprimer? Entrez le numéro de la tâche.`));
+            }
+        }
+    }
+
+    if (mot == "quit") {
+        alert(`Vous êtes sortis du programme, à Bientôt !`);
+    }
+
+    mot = prompt(`Que voulez-vous faire? Choisissez entre: \n- new pour ajouter \n- list pour voir toute la liste \n- delete pour supprimer une tâche \n- quit pour quitter le programme `);
+}
+
+// while (mot) {
+    
+// while (mot == "new") {
+
+//     const ajout = prompt(`Que voulez vous ajouter? \nSi vous ne voulez plus rien ajouter appuyer sur 1 `);
+//     const num = 1;
+//     if (ajout == num) {
+//         alert(`Vous sortez de la liste`);
+//     }
+//     console.log(num);
+// }
+    
+// }
+// ajout = prompt(`Que voulez vous ajouter? \nSi vous ne voulez plus rien ajouter appuyer sur 1 `);
