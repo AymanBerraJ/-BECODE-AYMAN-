@@ -528,85 +528,156 @@ console.log(leaderboard);
 // }
 
 
-const liste = [];
+// const liste = [];
 
-let mot = prompt(`Que voulez-vous faire? Choisissez entre: \n- new pour ajouter \n- list pour voir toute la liste \n- delete pour supprimer une tâche \n- quit pour quitter le programme `);
+// let mot = prompt(`Que voulez-vous faire? Choisissez entre: \n- new pour ajouter \n- list pour voir toute la liste \n- delete pour supprimer une tâche \n- quit pour quitter le programme `);
 
-while (mot && mot != "quit") {
+// while (mot && mot != "quit") {
 
-    while (mot != "new" && mot != "list" && mot != "delete") {
-        mot = prompt(`Entrez l'un des mots que nous vous avons demandé. \n- new pour ajouter \n- list pour voir toute la liste \n- delete pour supprimer une tâche \n- quit pour quitter le programme`)
-    }
-
-    if (mot == "new") {
-        while (mot != "0") {
-        mot = prompt(`Que voulez vous ajouter à la liste ?`);
-        if (mot == "0") {
-            alert(`Vous sortez de la liste`);
-        }else{
-            console.log(mot);
-            liste.push(mot);
-            alert(`Vous avez ajouter à la liste: ${mot}`)
-        }
-        }
-    }
-
-    let numeroter = ``;
-
-    if (mot == "list") {
-        while (mot != "0") {
-            numeroter = '';
-            let num = 1;
-            mot = prompt(`Appuyez sur 0 pour quitter la liste sinon appuyez sur n'importe quelle touche pour voir la liste TODO`);
-            if (mot == "0") {
-                alert(`Vous sortez de la liste`);
-            }else{
-                for (const tableau of liste) {
-                    
-                    numeroter = numeroter + (`\n${num}. ${tableau}`);
-                    num++;
-                    
-                }
-                console.log(`********* TODO LIST ********* \n${numeroter}`);
-            }
-        }
-    }
-
-    if (mot == "delete") {
-        let nb = parseInt(prompt(`Appuyez sur 0 pour revenir au menu principal, sinon choisissez le numéro de la tache que vous voulez supprimer.`));
-
-        while (nb != 0) {
-            if (nb == 0) {
-                alert(`Vous sortez du delete`);
-            }else if(nb > 0 && nb <= liste.length){
-
-                numeroter = liste.splice(nb-1,1);
-                console.log(liste);
-                
-            }else{
-                console.log(``);
-            }
-            nb = parseInt(prompt(`Appuyez sur 0 pour revenir au menu principal, sinon choisissez le numéro de la tache que vous voulez supprimer.`));
-        }
-    }
-
-    mot = prompt(`Que voulez-vous faire? Choisissez entre: \n- new pour ajouter \n- list pour voir toute la liste \n- delete pour supprimer une tâche \n- quit pour quitter le programme `);
-}
-if (mot == "quit") {
-    alert(`Vous êtes sortis du programme, à Bientôt !`);
-}
-
-// while (mot) {
-    
-// while (mot == "new") {
-
-//     const ajout = prompt(`Que voulez vous ajouter? \nSi vous ne voulez plus rien ajouter appuyer sur 1 `);
-//     const num = 1;
-//     if (ajout == num) {
-//         alert(`Vous sortez de la liste`);
+//     while (mot != "new" && mot != "list" && mot != "delete") {
+//         mot = prompt(`Entrez l'un des mots que nous vous avons demandé. \n- new pour ajouter \n- list pour voir toute la liste \n- delete pour supprimer une tâche \n- quit pour quitter le programme`)
 //     }
-//     console.log(num);
+
+//     if (mot == "new") {
+//         while (mot != "0") {
+//         mot = prompt(`Que voulez vous ajouter à la liste ?`);
+//         if (mot == "0") {
+//             alert(`Vous sortez de la liste`);
+//         }else{
+//             console.log(mot);
+//             liste.push(mot);
+//             alert(`Vous avez ajouter à la liste: ${mot}`)
+//         }
+//         }
+//     }
+
+//     let numeroter = ``;
+
+//     if (mot == "list") {
+//         while (mot != "0") {
+//             numeroter = '';
+//             let num = 1;
+//             mot = prompt(`Appuyez sur 0 pour quitter la liste sinon appuyez sur n'importe quelle touche pour voir la liste TODO`);
+//             if (mot == "0") {
+//                 alert(`Vous sortez de la liste`);
+//             }else{
+//                 for (const tableau of liste) {
+                    
+//                     numeroter = numeroter + (`\n${num}. ${tableau}`);
+//                     num++;
+                    
+//                 }
+//                 console.log(`********* TODO LIST ********* \n${numeroter}`);
+//             }
+//         }
+//     }
+
+//     if (mot == "delete") {
+//         let nb = parseInt(prompt(`Appuyez sur 0 pour revenir au menu principal, sinon choisissez le numéro de la tache que vous voulez supprimer.`));
+
+//         while (nb != 0) {
+//             if (nb == 0) {
+//                 alert(`Vous sortez du delete`);
+//             }else if(nb > 0 && nb <= liste.length){
+
+//                 numeroter = liste.splice(nb-1,1);
+//                 console.log(liste);
+                
+//             }else{
+//                 console.log(``);
+//             }
+//             nb = parseInt(prompt(`Appuyez sur 0 pour revenir au menu principal, sinon choisissez le numéro de la tache que vous voulez supprimer.`));
+//         }
+//     }
+
+//     mot = prompt(`Que voulez-vous faire? Choisissez entre: \n- new pour ajouter \n- list pour voir toute la liste \n- delete pour supprimer une tâche \n- quit pour quitter le programme `);
 // }
+// if (mot == "quit") {
+//     alert(`Vous êtes sortis du programme, à Bientôt !`);
+// }
+
+// function myFunctionName(Number){
+//     console.log("DO");
+//     console.log("RE");
+//     console.log("MI");
+//     console.log("FA");
+//     console.log("SOL");
+//     console.log("LA");
+//     console.log("SI");
+// }
+
+// myFunctionName();
+// myFunctionName();
+// myFunctionName();
+
+// function de(faces, times) {
     
+//     for (let i = 1; i <= times ; i++){
+//         const aleatoire = Math.floor(Math.random() * faces) + 1;
+
+//         console.log(`Die ${i} is : ${aleatoire}`);
+//     }
 // }
-// ajout = prompt(`Que voulez vous ajouter? \nSi vous ne voulez plus rien ajouter appuyer sur 1 `);
+// de(6,15)
+
+// function string (mot1, repete){
+//     for(let i = 0; i < repete; i++){
+//         console.log(mot1);
+//     }
+// }
+// string("salut", 5)
+
+// function name (firstName, lastName){
+//     console.log(`This is ${firstName} ${lastName}`);
+// }
+
+// name("Ayman","Berraj")
+
+// function addition (nb1, nb2){
+//     console.log(nb1 + nb2);
+// }
+
+// addition(5,10)
+
+// function logs() {
+//     console.log("Hello");
+//     console.log("World");
+//     return 4;
+//     console.log("Goodbye");
+//     console.log("World");
+// }
+// const myVariable = logs();
+
+// console.log(myVariable);
+
+// function isShortWeather (temperature){
+
+//     if (temperature >= 24) {
+//         return true
+//     }else{
+//         return false
+//     }
+// }
+
+// console.log(isShortWeather(29));
+
+// function array(tableau){
+    
+//     if (tableau.length == 0) {
+//         return null
+//     }else{
+//         return tableau[tableau.length - 1];
+//     }
+// }
+
+// console.log(array([1,2,3]));
+
+// function majuscule(string){
+
+//     let convertir = string.charAt(0).toUpperCase()+ string.slice(1) ;
+
+//     return convertir
+// }
+// console.log(majuscule("mam"));
+
+
