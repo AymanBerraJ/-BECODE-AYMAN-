@@ -681,3 +681,82 @@ console.log(leaderboard);
 // console.log(majuscule("mam"));
 
 
+// function sumArray(arg){
+//     let total = 0;
+
+//     for(let i = 0; i < arg.length; i++){
+//         total = total + arg[i];
+//     }
+//     return total
+// }
+
+// console.log(sumArray([50,50,1]));
+
+// function returnDay(number){
+//     if (number < 1 || number > 7) {
+//         return null
+//     } else if(number == 1){
+//         return "monday"
+//     } else if(number == 2){
+//         return "tuesday"
+//     } else if(number == 3){
+//         return "wednesday"
+//     } else if(number == 4){
+//         return "thursday"
+//     } else if(number == 5){
+//         return "friday"
+//     } else if(number == 6){
+//         return "saturday"
+//     } else{
+//         return "sunday"
+//     }
+// }
+
+// console.log(returnDay(5));
+
+// const callTwice = function (func) {
+//     func();
+//     func();
+// };
+
+// Here, the callTwice function takes another function as a parameter and call it two times
+
+// const rollDie = function () {
+
+//     const roll = Math.floor(Math.random() * 6 + 1);
+//     console.log(roll);
+// };
+
+// callTwice(rollDie);
+
+
+// function test(func, n){
+//     for(let i = 0; i < n; i++){
+//         console.log(func());
+
+//     }
+// }
+
+// test(rollDie, 10)
+
+// const user ={
+//     firstName: "Ayman",
+//     lastName: "Berraj",
+//     age: 23,
+//     printAge: function(){
+//         console.log(`Son prénom est ${this.firstName}, son nom est ${this.lastName} et il a ${this.age} ans`);
+//     },
+//     aYearHasPast: function(){
+//         console.log(`${this.age + 1}`);
+//     }
+// }
+
+// user.printAge();
+// user.aYearHasPast();
+
+//////////////////////////////////////////////TEST ARROW FUNCTION///////////////////////////////////////////
+
+// const fonction = (titre) => console.log(titre);
+
+// fonction("salut toi");
+
