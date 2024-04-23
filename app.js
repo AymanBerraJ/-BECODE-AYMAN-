@@ -785,3 +785,44 @@ console.log(leaderboard);
 // let min = date.getMinutes();
 // console.log(`${hours}:${min}`);
 
+/////////////////////////////////////////////DEBUT ALGO///////////////////////////////////////////////////////////////////////:
+
+// 0.
+// const nombre = (nb1, nb2) => {
+//     let sum = nb1 + nb2;
+
+//     if (nb1 == 10) {
+//         return true
+//     } else if(nb2 == 10){
+//         return true
+//     }else if(sum == 10){
+//         return true
+//     }else{
+//         return false
+//     }
+// }
+
+// console.log(nombre(2,3));
+
+// 1.
+// const annee = (age) => {
+//     let convertir = age *365;
+
+//     console.log(convertir);
+// }
+
+// annee(20);
+
+//2
+// const somme = (nb) => {
+//     let somme = 0;
+
+//     for(let i = 1; i <= nb; i++){
+        
+//         somme = somme + i;
+//     }
+//     console.log(somme);
+// }
+
+// somme(13)
+
