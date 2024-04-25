@@ -785,7 +785,7 @@ console.log(leaderboard);
 // let min = date.getMinutes();
 // console.log(`${hours}:${min}`);
 
-/////////////////////////////////////////////DEBUT ALGO///////////////////////////////////////////////////////////////////////:
+///////////////////////////////////////////////////////////////////////////////////////DEBUT ALGO///////////////////////////////////////////////////////////////////////:
 
 // 0.
 // const nombre = (nb1, nb2) => {
@@ -815,14 +815,12 @@ console.log(leaderboard);
 // 2.
 // const somme = (nb) => {
 //     let somme = 0;
-
 //     for(let i = 1; i <= nb; i++){
-        
-//         somme = somme + i;
+//         somme += i;
 //     }
-//     console.log(somme);
+//     return somme
 // }
-// somme(13)
+// console.log(somme(10000));
 
 // 3.
 // const minMax = (nb) => {
@@ -855,8 +853,8 @@ console.log(leaderboard);
 // console.log(minMax([2,6,9,2,8,7,11]));
 
 // 4.
-// const identifier = (random) => {
-//     const tab = random.split('');
+// const identifier = (carac) => {
+//     const tab = carac.split('');
 //     const filtrer = tab.filter(char => char === char.toLowerCase());
 //     return filtrer.join('')
 //     }
@@ -871,11 +869,11 @@ console.log(leaderboard);
 //     {name: "water", price: 3},
 // ]
 
-// drinks.sort(
-//     (a, b) => a.price - b.price // a > b => on change de place a < b => change pas de place
-// )
+drinks.sort(
+    (a, b) => a.price - b.price // a > b => on change de place a < b => change pas de place
+)
 
-// console.log(drinks);
+console.log(drinks);
 
 
 //  6.
