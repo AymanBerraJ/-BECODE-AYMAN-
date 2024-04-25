@@ -349,7 +349,6 @@ console.log(leaderboard);
 
 //   //YOUR CODE GOES DOWN HERE:
 
-
 // const fullAdress = restaurant.address + ", "+ restaurant.city +", "+ restaurant.state +" "+ restaurant.zipcode;
 
 // console.log(fullAdress);
@@ -363,13 +362,12 @@ console.log(leaderboard);
 
 //     console.log(mot);
 //     i = i + 1;
-    
-// }
 
+// }
 
 // for (let i = 1; i <= 20; i++) {
 //     if (i % 2 == 0) {                       MODULO
-//         console.log(i);   
+//         console.log(i);
 //     }
 // }
 // }
@@ -382,7 +380,7 @@ console.log(leaderboard);
 //     if (i % 2 == 1) {
 //         console.log(i);                     MODULO
 //     }
-    
+
 // }
 
 // for (let i = 100; i >= 0; i--) {
@@ -390,14 +388,14 @@ console.log(leaderboard);
 //     if (i % 10 == 0) {
 //         console.log(i);                     MODULO
 //     }
-    
+
 // }
 
 // for (let i = 25; i >= 0 ; i--) {
 //     if (i % 5 == 0) {
 //         console.log(i);
 //     }
-    
+
 // }
 
 // for (let i = 1; i <= 3 ; i++) {
@@ -420,7 +418,7 @@ console.log(leaderboard);
 // for(let i = 5; i > 0; i--){
 
 //     console.log(animals[i]);
-    
+
 // }
 
 // const users = [
@@ -483,7 +481,7 @@ console.log(leaderboard);
 // }
 
 // while (devine != nombre) {
-    
+
 //     if(devine > nombre){
 //         alert("Votre nombre est plus haut que le nombre ");
 //     }else if(devine < nombre){
@@ -527,7 +525,6 @@ console.log(leaderboard);
 //     console.log(`Dans ma famille il y a mon/ma ${clef} et son prénom est ${maFamille[clef]} `);
 // }
 
-
 // const liste = [];
 
 // let mot = prompt(`Que voulez-vous faire? Choisissez entre: \n- new pour ajouter \n- list pour voir toute la liste \n- delete pour supprimer une tâche \n- quit pour quitter le programme `);
@@ -562,10 +559,10 @@ console.log(leaderboard);
 //                 alert(`Vous sortez de la liste`);
 //             }else{
 //                 for (const tableau of liste) {
-                    
+
 //                     numeroter = numeroter + (`\n${num}. ${tableau}`);
 //                     num++;
-                    
+
 //                 }
 //                 console.log(`********* TODO LIST ********* \n${numeroter}`);
 //             }
@@ -582,7 +579,7 @@ console.log(leaderboard);
 
 //                 numeroter = liste.splice(nb-1,1);
 //                 console.log(liste);
-                
+
 //             }else{
 //                 console.log(``);
 //             }
@@ -611,7 +608,7 @@ console.log(leaderboard);
 // myFunctionName();
 
 // function de(faces, times) {
-    
+
 //     for (let i = 1; i <= times ; i++){
 //         const aleatoire = Math.floor(Math.random() * faces) + 1;
 
@@ -662,7 +659,7 @@ console.log(leaderboard);
 // console.log(isShortWeather(29));
 
 // function array(tableau){
-    
+
 //     if (tableau.length == 0) {
 //         return null
 //     }else{
@@ -679,7 +676,6 @@ console.log(leaderboard);
 //     return convertir
 // }
 // console.log(majuscule("mam"));
-
 
 // function sumArray(arg){
 //     let total = 0;
@@ -729,7 +725,6 @@ console.log(leaderboard);
 
 // callTwice(rollDie);
 
-
 // function test(func, n){
 //     for(let i = 0; i < n; i++){
 //         console.log(func());
@@ -760,8 +755,7 @@ console.log(leaderboard);
 
 // fonction("salut toi");
 
-
-// RAPPEL 
+// RAPPEL
 // myArray.push();
 // myArray.pop();
 // myArray.shift();
@@ -785,7 +779,9 @@ console.log(leaderboard);
 // let min = date.getMinutes();
 // console.log(`${hours}:${min}`);
 
-///////////////////////////////////////////////////////////////////////////////////////DEBUT ALGO///////////////////////////////////////////////////////////////////////:
+//////////////////////////////////////////////////////////////////////////////FIN JAVASCRIPT//////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////DEBUT ALGO 1////////////////////////////////////////////////////////////////////////
 
 // 0.
 // const nombre = (nb1, nb2) => {
@@ -815,12 +811,14 @@ console.log(leaderboard);
 // 2.
 // const somme = (nb) => {
 //     let somme = 0;
+
 //     for(let i = 1; i <= nb; i++){
-//         somme += i;
+
+//         somme = somme + i;
 //     }
-//     return somme
+//     return somme;
 // }
-// console.log(somme(10000));
+// somme(3)
 
 // 3.
 // const minMax = (nb) => {
@@ -845,7 +843,6 @@ console.log(leaderboard);
 // }
 // console.log(minMax([2,3,1,6,9]));
 
-
 // 3.1
 // const minMax = (nb) => {
 //     return([Math.min(...nb), Math.max(...nb)]); PLUS SIMPLE
@@ -853,8 +850,8 @@ console.log(leaderboard);
 // console.log(minMax([2,6,9,2,8,7,11]));
 
 // 4.
-// const identifier = (carac) => {
-//     const tab = carac.split('');
+// const identifier = (random) => {
+//     const tab = random.split('');
 //     const filtrer = tab.filter(char => char === char.toLowerCase());
 //     return filtrer.join('')
 //     }
@@ -869,12 +866,11 @@ console.log(leaderboard);
 //     {name: "water", price: 3},
 // ]
 
-drinks.sort(
-    (a, b) => a.price - b.price // a > b => on change de place a < b => change pas de place
-)
+// drinks.sort(
+//     (a, b) => a.price - b.price // a > b => on change de place a < b => change pas de place
+// )
 
-console.log(drinks);
-
+// console.log(drinks);
 
 //  6.
 // const total = (poulet, vache, cochon) => {
