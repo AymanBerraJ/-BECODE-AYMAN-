@@ -114,6 +114,5 @@
 
 // 9.
 // const diesel = (plein) => plein * 10 < 100 ? 100 : plein * 10
-
 // console.log(diesel(15));
 // console.log(diesel(3));
