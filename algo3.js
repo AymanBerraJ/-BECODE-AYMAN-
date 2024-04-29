@@ -103,3 +103,23 @@
 
 5.
 
+// const convertir = degres => {
+
+//     const tab = [degres]
+//     const lettre = tab.toString().split('')
+//     const joindre = parseInt(lettre.slice(0, 2).join(''))
+
+//     for(let el of lettre){
+//         if(el === "C"){
+//             return (joindre * 9/5) + 32
+//         }else if(el === "F"){
+//             return (joindre - 32) * 5/9
+//         }
+//     }
+    // const formule = (degres * 9/5) + 32
+    // const formuleDeux = (degres - 32) * 5/9
+    
+// }
+
+// console.log(convertir("35°C"));
+
