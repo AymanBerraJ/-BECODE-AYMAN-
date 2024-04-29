@@ -108,13 +108,13 @@
 
 9. 
 
-const reverseSentence = String => String.trim().split(" ").sort().join(" ")
+// const reverseSentence = String => String.trim().split(" ").sort().join(" ")
 
 //     const effacer = string.trim()
 //     const separer = effacer.split(" ")
 //     const reverse = separer.sort()
 //     const joind = reverse.join(' ')
 
-console.log(reverseSentence(" the sky is blue "));
-console.log(reverseSentence("hello   world!  "));
-console.log(reverseSentence("a good example"));
+// console.log(reverseSentence(" the sky is blue "));
+// console.log(reverseSentence("hello   world!  "));
+// console.log(reverseSentence("a good example"));
