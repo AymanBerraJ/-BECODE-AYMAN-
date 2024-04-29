@@ -57,3 +57,49 @@
 
 2.
 
+// const reverseWordSentence = (word) => word.trim().split(' ').map(el => el.split('').reverse().join('')).join(' ')
+
+// console.log(reverseWordSentence("Bananas est un fruit magnifique"));
+
+3.
+
+// const endFirst = sentence => {
+
+//     const separer = sentence.split(' ')
+
+//     for(let i = 0; i < separer.length - 1; i++){
+//         const dernierLettre = separer[i].charAt(separer[i].length-1).toLowerCase()
+//         const premiereLettre = separer[i + 1].charAt(0).toLowerCase()
+        
+//         if (dernierLettre == premiereLettre) {
+//             return true
+//         }
+//     }
+//     return false
+// }
+
+// console.log(endFirst("Marta appreciated deep perpendicular right trapezoids"));
+// console.log(endFirst("Someone is outside the doorway"));
+// console.log(endFirst("She eats super righteously"));
+
+4. 
+
+// const numberSeven = seven => {
+    
+//     const tabDeux = seven.toString().split('').map(el => parseInt(el))
+
+//     for(let i = 0; i < tabDeux.length; i++){
+//         if(tabDeux[i] == 7){
+//             return "Boom !"
+//         }
+//         // console.log(tabDeux[i]);
+//     }
+//     return 'there is no 7 in the array'
+
+//     return tabDeux
+// }
+
+// console.log(numberSeven([1, 5, 7, 68, 256, 4651, 98]));
+
+5.
+
