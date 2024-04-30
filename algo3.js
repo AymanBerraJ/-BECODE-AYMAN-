@@ -71,11 +71,11 @@
 //         const dernierLettre = separer[i].charAt(separer[i].length-1).toLowerCase()
 //         const premiereLettre = separer[i + 1].charAt(0).toLowerCase()
         
-//         if (dernierLettre == premiereLettre) {
-//             return true
+//         if (dernierLettre !== premiereLettre) {
+//             return false
 //         }
 //     }
-//     return false
+//     return true
 // }
 
 // console.log(endFirst("Marta appreciated deep perpendicular right trapezoids"));
