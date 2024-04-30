@@ -118,3 +118,5 @@
 // console.log(reverseSentence(" the sky is blue"));
 // console.log(reverseSentence("hello   world!  "));
 // console.log(reverseSentence("a good example"));
+
+console.log("SI VOUS TROUVEZ CE MESSAGE, SACHEZ QUE JE VOUS AIME");
