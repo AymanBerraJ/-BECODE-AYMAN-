@@ -117,4 +117,4 @@
 // console.log(diesel(15));
 // console.log(diesel(3));
 
-console.log("VIVE LES MOTOS");
+console.log("VIVE LES MOTOS ET L'INFO");
