@@ -123,3 +123,30 @@
 
 // console.log(convertir("35°C"));
 
+6.
+
+// const findBrokenLetters = (mot1, mot2) => {
+
+//     const tab1 = [mot1]
+//     const string = tab1.toString()
+//     const spliter = string.split('')
+//     const mape = spliter.map(el => el.split(' '))
+//     const concate = mape.reduce((acc, curr) => acc.concat(curr), []);
+
+
+//     const tab2 = [mot2]
+//     const string2 = tab2.toString()
+//     const spliter2 = string2.split('')
+//     const mape2 = spliter2.map(el => el.split(' '))
+//     const concate2 = mape2.reduce((acc, curr) => acc.concat(curr), []);
+    
+
+//     let doublon = concate.filter(e => !concate2.includes(e))
+//     let pasDoublon = new Set(doublon)
+
+//     return [...pasDoublon]
+// }
+
+// console.log(findBrokenLetters("happy birthday", "hawwy birthday"));
+// console.log(findBrokenLetters("starry night", "starrq light"));
+// console.log(findBrokenLetters("beethoven", "affthoif5"));
