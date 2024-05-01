@@ -37,5 +37,25 @@
 // }
 // console.log(ransomNote("this is a note to you from a secret admirer", "puerto rico is a great place you must hike far from town to find a secret waterfall that i am an admirer of but note that it is not as hard as it seems this is my advice to you"));
 
+2.
+
+// const isPalindrome = (text) => {
+// 
+    // const spliter = text.split(' ').join('')
+    // const joindre = spliter.toString().join('')
+    // const reverse = text.split('').reverse().join('').split(' ').join('')
+    
+    // if(spliter !== reverse){
+    //     return false
+    // }else{
+    //     return true
+    // }
+
+    // return reverse
+// }
+// console.log(isPalindrome("kayak"))
+// console.log(isPalindrome("race car"));
+// console.log(isPalindrome("hello world"));
+
 3.
 
