@@ -59,3 +59,44 @@
 
 3.
 
+// const letterModif = (string, number) => {
+
+//     const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+//     let str = string.toLowerCase()
+//     let stringModif = '';
+
+//     for(let i = 0; i < str.length; i++){
+//         let index = alphabet.indexOf(str[i])
+//         index += number
+//         if(str[i] == " "){
+//             stringModif += " "
+//             continue
+//         }
+//         if(index > alphabet.length){
+//             index -= alphabet.length
+//         }
+//         if(index < 0){
+            
+//             index += alphabet.length
+//         }
+//         stringModif = stringModif + alphabet[index]
+//     }
+//     return stringModif
+// }
+// console.log(letterModif("zoo keeper", 2))
+// console.log(letterModif("bqq mggrgt", -2));
+// console.log(letterModif("My name is Henrique", 3));
+
+// let x = ""
+// for(let i = 0; i < 5; i++){
+//     if(i==3){
+    //  x += " ";
+//         continue
+//     }
+//     x = x + i;
+// }
+
+// console.log(x);
+
+4.
+
