@@ -100,3 +100,43 @@
 
 4.
 
+// const randomChar = string =>  string.split(' ').map(el => el.split('').reverse().join('')).concat().join(' ').toLowerCase()
+
+// console.log(randomChar("This is a string of words"));
+
+5.
+
+// const reverse = array => {
+
+//     let start = 0;
+//     let end = array.length-1
+
+//     while(start < end){
+        
+//         [array[start], array[end]] = [array[end], array[start]]
+//         start++
+//         end--
+//     }
+//     return array
+// }
+// console.log(reverse([2, 5, 9, "quoi", 3, "bien"]))
+
+6.
+
+// const somme = (numArray, sum) => {
+
+//     const resultatSomme = []
+
+//     for(let i = 0; i < numArray.length; i++){
+//         for(let j = i + 1; j < numArray.length; j++){
+//             if(numArray[i] + numArray[j] === sum){
+//                 resultatSomme.push([numArray[j], numArray[i]])
+//             }
+//         }
+//     }
+//     return resultatSomme
+// }
+// console.log(somme([1, 6, 4, 5, 3, 3], 7))
+
+7.
+
