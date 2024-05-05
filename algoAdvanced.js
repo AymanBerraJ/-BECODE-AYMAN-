@@ -140,3 +140,15 @@
 
 7.
 
+// const fibonacci = Number => {
+
+//     const initialiser = [1, 1]
+
+//     for(let i = 2; i < Number; i++){
+//         initialiser[i] = initialiser[i - 1] + initialiser[i - 2]
+//     }
+
+//     return initialiser
+// }
+
+// console.log(fibonacci(9));
