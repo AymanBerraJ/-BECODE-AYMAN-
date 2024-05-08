@@ -34,7 +34,55 @@
 
 6.
 
-const equal = (array1, array2, array3) => (array1.sort() == array2.sort()) ? true : (array1.sort() == array3.sort()) ? true : (array3.sort() == array2.sort()) ? true : false
+// const equal = (array1, array2) => array1.every(element => array2.includes(element))
 
 
-console.log(equal([1, 2, 3, 4], [3, 1, 4, 2], [1, 2, 3]));
+// console.log(equal([1, 2, 3, 4], [3, 1, 4, 2]));
+// console.log(equal([1, 2, 3, 4], [1, 2, 3]));
+
+7.
+
+// const randomRGB = (r, g, b) => console.log(` rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}) `)
+
+// randomRGB()
+
+8.
+
+// const numberLetter = (string, letter) => string.split('').filter(el => el === letter).length
+
+// console.log(numberLetter("hello", "l"));
+
+9.
+
+// const numberPositive = (number) => number.filter((chiffre)=> chiffre > 0).reduce((acc, valueC) => acc + valueC ,0 )
+// const numberPositive = (number) => number.reduce((acc, valueC) => valueC > 0 ? acc + valueC : acc)
+
+// console.log(numberPositive([1, 6, 2, -3, 5, -12]))
+
+10.
+
+// const scanAndFind = (object, key) => object.filter(element => element[Object.keys(key)] === Object.values(key)[0]);
+
+// console.log(scanAndFind(
+//     [
+//     {
+//         firstName: "Vito",
+//         lastName: "Corleone",
+//     },
+//     {
+//         firstName: "Jon",
+//         lastName: "Snow",
+//     },
+//     {
+//         firstName: "Harry",
+//         lastName: "Potter",
+//     },
+//     {
+//         firstName: "Michal",
+//         lastName: "Corleone",
+//     },
+//     ],
+//     {
+//     lastName: "Corleone",
+//     }
+// ))
