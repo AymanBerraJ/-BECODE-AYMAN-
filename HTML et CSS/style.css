@@ -1,0 +1,46 @@
+body {
+    background-color: hsl(39, 6%, 83%)
+}
+
+h1 {
+    color: rgb(12, 37, 134);
+}
+
+span {
+    color: #d69e36
+}
+
+.menu a{
+    color: rgb(134, 12, 110)
+}
+
+.menu span{
+    color: red
+}
+
+[data-role="dropdown"]{
+    background-color: hsl(39, 21%, 73%);
+}
+
+[data-role="dropdown"] li span{
+    color: rgb(14, 86, 96)
+}
+
+[data-role="dropdown"] li {
+    color: black
+}
+
+[data-role="dropdown"] li a {
+    color: darkblue
+}
+
+[data-role="dropdown"] li:hover {
+    background-color: purple;
+}
+
+.content p {
+    color: darkcyan
+}
+.content a {
+    color: darkcyan;
+}
