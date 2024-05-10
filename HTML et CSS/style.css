@@ -34,13 +34,14 @@ span {
     color: darkblue
 }
 
-[data-role="dropdown"] li:hover {
+/* [data-role="dropdown"] li:hover {
     background-color: purple;
+} */
+
+.blabla + li{
+    background-color: purple
 }
 
-.content p {
+.content *{
     color: darkcyan
-}
-.content a {
-    color: darkcyan;
 }
