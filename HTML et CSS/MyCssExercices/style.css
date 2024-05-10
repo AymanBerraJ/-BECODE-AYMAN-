@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: hsl(39, 6%, 83%)
 }
 
@@ -38,10 +38,10 @@ span {
     background-color: purple;
 } */
 
-.blabla + li{
+/* .blabla + li{
     background-color: purple
 }
 
 .content *{
     color: darkcyan
-}
+} */ 
