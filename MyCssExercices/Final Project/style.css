@@ -9,26 +9,18 @@ body{
     text-decoration: none;
 }
 
-/* @media screen and (max-width: 1200px) {
-    .container{
-        width: 80%;
-    }
-    .container-body{
-        width: 80%;
-    }
-    .container-foot{
-        width: 80%;
-    }
-} */
-
 /* La barre de navigation */
+.container-principale{
+    display: grid;
+    max-width: 1110px;
+    margin: 0 auto;
+}
 
 .container{
     display: flex;
     background-color: white;
     margin: 72px auto 0px;
-    width: 1110px;
-    height: 40px;
+    min-height: 40px;
 }
 .liste li{
     color: #5E607A;
@@ -49,9 +41,8 @@ body{
 .container-body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    width: 1110px;
-    height: 511px;
+    grid-template-rows: 300px auto;
+    min-height: 450px;
     margin: 72px auto 0px;
     gap: 25px;
 }
@@ -146,8 +137,7 @@ body{
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: 1fr;
-    width: 1110px;
-    height: 130px;
+    min-height: 130px;
     margin: 72px auto 129px;
     gap: 25px;
 }
@@ -161,7 +151,7 @@ body{
 .image-pc img{
     object-fit: cover;
     width: 100%;
-    height: 130px;
+    height: 100%;
     object-position: 0% 0%;
 }
 .texte-un{
@@ -176,7 +166,7 @@ body{
 .image-clavier img{
     object-fit: cover;
     width: 100%;
-    height: 130px;
+    height: 100%;
     object-position: 0% 0%;
 }
 .texte-deux{
@@ -191,7 +181,7 @@ body{
 .image-manette img{
     object-fit: cover;
     width: 100%;
-    height: 130px;
+    height: 100%;
     object-position: 0% 0%;
 }
 .texte-trois{
@@ -222,4 +212,25 @@ body{
     font-size: 15px;
     font-weight: 400;
     line-height: 26px;
+}
+
+@media screen and (max-width: 400px) {
+
+    .container-principale{
+        grid-template-columns: 1fr;
+        grid-template-rows: ;
+        grid-template-areas: 
+        "nav"
+        "body"
+        "footer";
+    }
+    .container-body{
+        grid-area: body;
+    }
+    .container-foot{
+        grid-area: footer;
+    }
+    .container{
+        grid-area: nav;
+    }
 }
