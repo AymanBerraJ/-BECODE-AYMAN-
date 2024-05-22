@@ -11,12 +11,15 @@ body{
 
 /* La barre de navigation */
 .container-principale{
-    display: grid;
     max-width: 1110px;
     margin: 0 auto;
 }
 
-.container{
+#burger{
+    display: none;
+}
+
+.container-nav{
     display: flex;
     background-color: white;
     margin: 72px auto 0px;
@@ -137,7 +140,7 @@ body{
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: 1fr;
-    min-height: 130px;
+    /* min-height: 130px; */
     margin: 72px auto 129px;
     gap: 25px;
 }
@@ -150,7 +153,7 @@ body{
 }
 .image-pc img{
     object-fit: cover;
-    width: 100%;
+    width: 100px;
     height: 100%;
     object-position: 0% 0%;
 }
@@ -165,7 +168,7 @@ body{
 }
 .image-clavier img{
     object-fit: cover;
-    width: 100%;
+    width: 100px;
     height: 100%;
     object-position: 0% 0%;
 }
@@ -180,7 +183,7 @@ body{
 }
 .image-manette img{
     object-fit: cover;
-    width: 100%;
+    width: 100px;
     height: 100%;
     object-position: 0% 0%;
 }
@@ -214,23 +217,55 @@ body{
     line-height: 26px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 376px) {
 
     .container-principale{
-        grid-template-columns: 1fr;
-        grid-template-rows: ;
-        grid-template-areas: 
-        "nav"
-        "body"
-        "footer";
+        padding: 16px;
     }
     .container-body{
-        grid-area: body;
+        display: flex;
+        flex-direction: column;
     }
     .container-foot{
-        grid-area: footer;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
-    .container{
-        grid-area: nav;
+    .image-pc{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .texte-un{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .image-clavier{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .texte-deux{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .image-manette{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    .texte-trois{
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+    #image-content{
+        width: 137px;
+    }
+
+    .liste{
+        display: none;
+    }
+    
+    #burger{
+        display: flex;
+        margin-left: auto;
     }
 }
