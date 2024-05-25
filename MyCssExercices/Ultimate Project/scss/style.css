@@ -18,7 +18,7 @@ a {
 }
 
 .header {
-  padding: 31px 124px;
+  padding: 31px 119px 31px 124px;
 }
 .header .container {
   display: flex;
@@ -114,8 +114,8 @@ a {
      object-fit: cover;
 }
 .main .vague {
-  max-width: 730px;
-  height: 748px;
+  max-width: 748px;
+  height: 747px;
   margin-left: auto;
-  transform: translate(115px, -960px);
+  transform: translate(136px, -960px);
 }/*# sourceMappingURL=style.css.map */
