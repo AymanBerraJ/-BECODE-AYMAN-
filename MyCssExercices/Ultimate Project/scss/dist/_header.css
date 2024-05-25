@@ -1,0 +1,21 @@
+.header {
+  padding: 31px 124px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .logo {
+  font-weight: 800;
+}
+.header .container .logo #logo {
+  color: rose;
+}
+.header .container li {
+  display: inline-block;
+  padding-left: 30px;
+}
+.header .container li a {
+  color: white;
+}
