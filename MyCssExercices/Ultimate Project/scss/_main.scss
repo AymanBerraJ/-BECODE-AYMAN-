@@ -1,9 +1,12 @@
 .main{
-padding: 164px 124px;
-
+    padding: 100px 0px 0px 124px;
+    .deco-rond{
+        transform: translateX(-43px);
+    }
     .texte{
         max-width: 503px;
         min-height: 325px;
+        transform: translateY(-107px);
         h1{
             color: #FFFFFF;
             font-size: 64px;
@@ -26,7 +29,49 @@ padding: 164px 124px;
             font-weight: 300;
             line-height: 32px;
             letter-spacing: 4.5%;
+            padding-bottom: 40px;
+        }
+        .btn1{
+            background-color: $rose;
+            color: white;
+            padding: 13PX 30px;
+            border-radius: 75px;
+            font-weight: 500;
+            line-height: 16.8px;
+            letter-spacing: 4.5%;
+            
+            &:hover{
+                color: black;
+            }
+        }
+        .btn2{
+            background-color: #EFEFEF;
+            color: black;
+            margin-left: 24px;
+            padding: 13PX 30px;
+            border-radius: 75px;
+            font-weight: 500;
+            line-height: 16.8px;
+            letter-spacing: 4.5%;
+
+            &:hover{
+                color: $rose;
+            }
+        }
+
+    }
+    .point-carre{
+        transform: translate(290px, -200px);
+        img{
+            max-width: 184px;
+            height: 181px;
+            object-fit: cover;
         }
     }
-
+    .vague{
+        max-width: 730px;
+        height: 748px;
+        margin-left: auto;
+        transform: translate( 115px, -960px);
+    }
 }
