@@ -1,6 +1,6 @@
-// const exemple = document.getElementById("main-heading")
+// const exemple = document.getElementById("main-heading");
 // exemple.style.color = "red";
-// exemple.innerText = "bonjour"
+// exemple.innerText = "bonjour";
 // console.log(exemple);
 
 const myList = document.querySelector("ul");
