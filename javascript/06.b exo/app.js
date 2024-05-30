@@ -35,9 +35,10 @@
         // element.classList.toggle("highlight");
     // })
 
-    for(let i = 0; i <= 1025; i++){
-        var image = document.createElement("img");
-        image.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+ i + ".png";
-        image.alt = "Pokémon " +i;
-        document.querySelector(".container").append(image)
-    }
+    // for(let i = 0; i <= 1025; i++){
+    //     var image = document.createElement("img");
+    //     image.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+ i + ".png";
+    //     image.alt = "Pokémon " +i;
+    //     document.querySelector(".container").append(image)
+    // }
+    
