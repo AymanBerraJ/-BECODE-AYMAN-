@@ -1,15 +1,15 @@
-// const bold = document.querySelector("b");
-
-// bold.parentElement.parentElement.parentElement.parentElement.style.backgroundColor = "beige";
-// bold.style.color = "red";
-
-// bold.parentElement.parentElement.parentElement.style.background = "darkblue";
-// bold.parentElement.parentElement.style.color = "white";
-// bold.parentElement.nextElementSibling.style.color = "pink";
-// bold.parentElement.parentElement.parentElement.previousElementSibling.querySelector("ul").style.color = "orange";
-// bold.parentElement.parentElement.parentElement.previousElementSibling.querySelectorAll("a").forEach(a => a.style.color = "green");
-// bold.parentElement.parentElement.parentElement.previousElementSibling.querySelector("h1").style.textTransform = "uppercase";
-
+    1.
+    // const bold = document.querySelector("b");
+    // bold.parentElement.parentElement.parentElement.parentElement.style.backgroundColor = "beige";
+    // bold.style.color = "red";
+    // bold.parentElement.parentElement.parentElement.style.background = "darkblue";
+    // bold.parentElement.parentElement.style.color = "white";
+    // bold.parentElement.nextElementSibling.style.color = "pink";
+    // bold.parentElement.parentElement.parentElement.previousElementSibling.querySelector("ul").style.color = "orange";
+    // bold.parentElement.parentElement.parentElement.previousElementSibling.querySelectorAll("a").forEach(a => a.style.color = "green");
+    // bold.parentElement.parentElement.parentElement.previousElementSibling.querySelector("h1").style.textTransform = "uppercase";
+    
+2.
     // setTimeout(() => {
 
     //     for(let i= 1; i <= 100; i++){
@@ -22,7 +22,7 @@
     //     inner.innerText = "There are a lot of buttons here !"
 
     // }, 2000);
-
+    3.
     // const exemple = document.querySelectorAll("li");
     // exemple.forEach(element => {
         // if(element.classList.contains("highlight")){
@@ -34,6 +34,11 @@
         // toggle
         // element.classList.toggle("highlight");
     // })
+    4.
+
+    // const titre = document.querySelector("h1");
+    // titre.style.textAlign = "center";
+    // titre.style.fontSize = "6rem";
 
     // for(let i = 0; i <= 1025; i++){
     //     var image = document.createElement("img");
@@ -42,3 +47,4 @@
     //     document.querySelector(".container").append(image)
     // }
     
+
