@@ -1,0 +1,41 @@
+.container{
+    background: linear-gradient(to right, #ff7e5f, #feb47b); ;
+    text-align: center;
+    width: 350px;
+    margin: auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+    
+}
+label{
+    margin: auto;
+    font-weight: bold;
+    font-size: 14px;
+}
+input{
+    display: flex;
+    margin: auto;
+}
+#submit{
+    padding: 20px;
+}
+.button{
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.enter{
+    padding: 20px;
+}
+.msg{
+    display: none;
+}
+.success{
+    color: green;
+}
+.error{
+    color: red;
+}
