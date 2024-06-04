@@ -12,6 +12,7 @@ const winCombinations = [
   const cell = [...document.getElementsByClassName("cell")];
   const message = document.querySelector(".message")
   const p = document.querySelector("p");
+  const button = document.querySelector("button");
 
   let tour = {
     joueur: 1,
@@ -50,7 +51,8 @@ const winCombinations = [
             tour.c9 != 0
            ){
             return null;
-           }else{
+           }
+           else{
             return false;
            }
     }
@@ -65,13 +67,9 @@ const winCombinations = [
 
     if (victory == true) {
         p.textContent = "The winner is the Player " + tour.joueur;
-
-        reset();
-
         cell.forEach(c => c.textContent = "" );
     }else if(victory === null){
         p.textContent = "Match Tie";
-        reset();
         cell.forEach(c => c.textContent = "" );
     }else if(victory == false){
         if(tour.joueur == 1){
@@ -90,7 +88,11 @@ const winCombinations = [
     element.addEventListener('click', caseJouer)
   });
 
+  button.addEventListener('click', ()=>{
+    reset();
+  })
   const reset = () => {
+    message.textContent = "Good Luck !";
     joueur = 1;
     tour.c1 = 0;
     tour.c2 = 0;
