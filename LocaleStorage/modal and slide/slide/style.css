@@ -33,8 +33,8 @@ img {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: white; 
-    transition: top 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.5); 
+    transition: top 1s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,9 +50,10 @@ img {
     width: 40px;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
+    color: lightgray;
 }
 .liste.active {
-    top: 0; 
+    top: 0;
 }
 
 .menu {

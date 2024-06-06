@@ -22,24 +22,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuBurger = document.querySelector('.menu-burger');
     const liste = document.querySelector('.liste');
-    const back = document.querySelector('.back');
-    const closeBtn = document.querySelector('.close');
+    const close = document.querySelector('.close');
 
     menuBurger.addEventListener('click', () => {
+        menuBurger.style.display = 'none';
         liste.classList.add('active');
-        back.style.display = 'block';  // Affiche l'arrière-plan
-        closeBtn.style.display = 'block';  // Affiche le bouton de fermeture
+        close.style.display = 'block';  
     });
 
-    closeBtn.addEventListener('click', () => {
+    close.addEventListener('click', () => {
+        menuBurger.style.display = 'block';
         liste.classList.remove('active');
-        back.style.display = 'none';  // Cache l'arrière-plan
-        closeBtn.style.display = 'none';  // Cache le bouton de fermeture
-    });
-
-    back.addEventListener('click', () => {
-        liste.classList.remove('active');
-        back.style.display = 'none';
-        closeBtn.style.display = 'none';
+        close.style.display = 'none'; 
     });
 });
