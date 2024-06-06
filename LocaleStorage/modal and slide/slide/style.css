@@ -41,16 +41,16 @@ img {
 }
 
 .close {
+    font-family: 'Roboto', sans-serif;
+    color: lightgray;
     position: absolute;
     right: 20px;
     top: 20px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
     height: 40px;
     width: 40px;
-    font-family: 'Roboto', sans-serif;
     font-size: 40px;
-    color: lightgray;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
 }
 .liste.active {
     top: 0;
@@ -61,6 +61,7 @@ img {
 }
 
 .close:hover {
+
     transform: rotate(360deg);
 }
 .liste ul {

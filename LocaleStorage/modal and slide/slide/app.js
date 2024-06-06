@@ -19,7 +19,7 @@
 //     back.style.display = 'none';
 // });
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('click', () => {
     const menuBurger = document.querySelector('.menu-burger');
     const liste = document.querySelector('.liste');
     const close = document.querySelector('.close');
