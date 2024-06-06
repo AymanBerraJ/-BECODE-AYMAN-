@@ -1,17 +1,22 @@
-const btn = document.querySelector("button");
-const text = document.querySelector("#textContent")
-const bcg = document.querySelector(".container");
+const click = document.querySelector(".click");
+const body = document.querySelector(".body");
+const modal = document.querySelector(".modal");
+const close = document.querySelector(".close");
 
-btn.addEventListener('click', () => {
-    text.style.display = "block";
-    btn.style.display = "none";
-    bcg.style.background= "darkgray";
-    bcg.style.cursor = "pointer";
+
+click.addEventListener('click', () => {
+    body.style.display = "block";
+    modal.style.display = "block";
 })
 
-bcg.addEventListener('click', ()=>{
-    text.style.display = "none";
-    btn.style.display = "block";
-    bcg.style.background = "white";
+close.addEventListener('click', ()=>{
+    body.style.display = "none";
+    modal.style.display = "none";
+    click.style.display = "block";
 });
-const p = document.querySelector("p");
+
+body.addEventListener('click', () => {
+    body.style.display = "none";
+    modal.style.display = "none";
+    click.style.display = "block";
+});
