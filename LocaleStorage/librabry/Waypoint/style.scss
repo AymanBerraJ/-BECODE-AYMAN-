@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  .rouge {
+    background-color: red;
+    height: 200vh;
+    width: 100%;
+  }
+  .vert {
+    background-color: green;
+    height: 100vh;
+    width: 100%;
+  }
+}
