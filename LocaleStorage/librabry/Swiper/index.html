@@ -13,49 +13,51 @@
   <body>
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <!-- // Slides -->
+        <!-- image -->
 
         <div class="swiper-slide">
-          <img src="https://picsum.photos/id/14/200/300" alt="" />
+          <img src="image/img14.jpg" alt="" />
         </div>
         <div class="swiper-slide">
-          <img src="https://picsum.photos/id/12/200/300" alt="" />
+          <img src="image/img-12.jpg" alt="" />
         </div>
         <div class="swiper-slide">
-          <img src="https://picsum.photos/id/11/200/300" alt="" />
+          <img src="image/img-11.jpg" alt="" />
         </div>
         <div class="swiper-slide">
-          <img src="https://picsum.photos/id/10/200/300" alt="" />
+          <img src="image/img-10.jpg" alt="" />
         </div>
         <div class="swiper-slide">
-          <img src="https://picsum.photos/id/15/200/300" alt="" />
+          <img src="image/img-15.jpg" alt="" />
         </div>
         <div class="swiper-slide">
-          <img src="https://picsum.photos/id/13/200/300" alt="" />
+          <img src="image/img-13.jpg" alt="" />
         </div>
         <div class="swiper-slide">
-          <img src="https://picsum.photos/id/16/200/300" alt="" />
+          <img src="image/img-16.jpg" alt="" />
         </div>
         <div class="swiper-slide">
-          <img src="https://picsum.photos/id/17/200/300" alt="" />
+          <img src="image/img-17.jpg" alt="" />
         </div>
         <div class="swiper-slide">
-          <img src="https://picsum.photos/id/19/200/300" alt="" />
+          <img src="image/img-19.jpg" alt="" />
         </div>
       </div>
       <!-- Pagination -->
       <div class="swiper-pagination"></div>
-      <!-- Navigation buttons -->
+      <!-- button -->
       <div class="swiperBtnNext button-next"></div>
       <div class="swiperBtnBef button-prev"></div>
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-      // Initialisation de Swiper avec les options nécessaires
+      // init swiper
       var swiper = new Swiper(".swiper-container", {
-        slidesPerView: 3.5, // Montre 3.5 images à la fois
-        spaceBetween: 10, // Espace entre les images
+        slidesPerView: 3.5, // montre 3.5 images à la fois
+        spaceBetween: 10, // espace entre les images
+
+        loop: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
