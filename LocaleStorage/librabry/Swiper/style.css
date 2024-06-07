@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .swiper-container {
+  width: 100%;
+  height: 100vh;
+}
+body .swiper-slide {
+  background-position: center;
+  width: 30%;
+}
+body .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .swiperBtnNext,
+body .swiperBtnBef {
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+}
+body .button-next {
+  display: block;
+  position: absolute;
+  background-image: url("image/next.png");
+  background-size: contain;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  right: 15px;
+  top: 50%;
+  z-index: 100;
+  cursor: pointer;
+}
+body .button-prev {
+  display: block;
+  background-size: contain;
+  position: absolute;
+  background-image: url("image/prev.png");
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  left: 15px;
+  top: 50%;
+  z-index: 100;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

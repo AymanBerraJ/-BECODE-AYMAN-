@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+body .test, body .rouge, body .bleu, body .vert, body .jaune {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .test {
+  background-color: gray;
+}
+body .rouge {
+  background-color: red;
+}
+body .bleu {
+  background-color: blue;
+}
+body .vert {
+  background-color: green;
+}
+body .jaune {
+  background-color: yellow;
+}/*# sourceMappingURL=style.css.map */

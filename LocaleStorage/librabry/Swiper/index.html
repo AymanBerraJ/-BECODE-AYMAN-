@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Swiper</title>
+  </head>
+  <body>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- // Slides -->
+
+        <div class="swiper-slide">
+          <img src="https://picsum.photos/id/14/200/300" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://picsum.photos/id/12/200/300" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://picsum.photos/id/11/200/300" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://picsum.photos/id/10/200/300" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://picsum.photos/id/15/200/300" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://picsum.photos/id/13/200/300" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://picsum.photos/id/16/200/300" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://picsum.photos/id/17/200/300" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://picsum.photos/id/19/200/300" alt="" />
+        </div>
+      </div>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Navigation buttons -->
+      <div class="swiperBtnNext button-next"></div>
+      <div class="swiperBtnBef button-prev"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      // Initialisation de Swiper avec les options nécessaires
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3.5, // Montre 3.5 images à la fois
+        spaceBetween: 10, // Espace entre les images
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

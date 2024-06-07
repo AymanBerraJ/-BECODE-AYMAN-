@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+
+    .test, .rouge, .bleu, .vert, .jaune{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .test{
+        background-color: gray;
+    }
+    .rouge{
+        background-color: red;
+    }
+    .bleu{
+        background-color: blue;
+    }
+    .vert{
+        background-color: green;
+    }
+    .jaune{
+        background-color: yellow;
+    }
+}
+
