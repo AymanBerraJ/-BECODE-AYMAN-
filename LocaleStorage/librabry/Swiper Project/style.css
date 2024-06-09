@@ -12,51 +12,55 @@ body {
   height: 100vh;
   background-color: #0c1015;
 }
-body .container {
+
+.container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   width: 1105px;
   min-height: 490px;
 }
-body .container .image {
+.container .image {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 20px;
   width: 532px;
 }
-body .container .image img {
+.container .image img {
   width: 152px;
   height: 152px;
   -o-object-fit: cover;
      object-fit: cover;
   filter: brightness(25%);
-  transition: filter 0.3s;
+  transition: filter 0.7s;
   cursor: pointer;
 }
-body .container .image img.active {
+.container .image img.active {
   filter: brightness(100%);
 }
-body .description {
+.container .description {
   padding: 50px 60px 65px 50px;
   background-color: #24292f;
 }
-body .description h1 {
+.container .description .info-perso {
+  display: none;
+}
+.container .description .info-perso h1 {
   font-family: inter, sans-serif;
   font-weight: 400;
   font-size: 22px;
   color: white;
   padding-bottom: 8px;
 }
-body .description h2 {
+.container .description .info-perso h2 {
   font-family: inter, sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #c92b2b;
   padding-bottom: 25px;
 }
-body .description p {
+.container .description .info-perso p {
   font-family: Inter, sans-serif;
   font-size: 14px;
   font-weight: 400;
