@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Djaj</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <div class="logo">
-            <img id="logo" src="image/djaj.jpeg" alt="">
-        </div>
-        <input type="text" placeholder="Enter the word" />
+      <div class="logo">
+        <img id="logo" src="image/djaj.jpeg" alt="" />
+      </div>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Enter the word" />
+        <button id="search-button">Search</button>
+      </div>
     </div>
     <div class="barre"></div>
 
+    <div class="results-container" id="results"></div>
 
+    <div class="bcg"></div>
     
-<div class="container">
-
-</div>
-
+    <div class="modal">
+      <span id="close-button">&times;</span>
+      <img id="modal-img" src="" alt="" />
+      <h2 id="titre-modal"></h2>
+      <h3>Ingrédient</h3>
+      <p id="ingrédient"></p>
+      <p id="cuisiner"></p>
+    </div>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
