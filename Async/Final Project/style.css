@@ -5,76 +5,163 @@
 }
 
 body {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  background-color: white;
+  font-family: "Outfit", sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 20px;
 }
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
-.header #logo {
-  width: 200px;
+.header .logo img {
+  height: 100px;
 }
-.header input {
-  margin-bottom: 20px;
+.header .search-container {
+  display: flex;
+}
+.header .search-container input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+.header .search-container button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+.header .search-container button:hover {
+  background-color: #0062cc;
 }
 
 .barre {
-  width: 1000px;
-  border: 1px solid #36373a;
-  margin-bottom: 20px;
+  height: 2px;
+  background-color: #ddd;
+  margin: 20px 0;
 }
 
 .results-container {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  margin: 0px 50px 0px 50px;
 }
-
-.results-container img {
+.results-container .results-header {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
+}
+.results-container .meal-container {
+  width: 200px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.results-container .meal-container:hover {
+  transform: scale(1.05);
+}
+.results-container .meal-container .meal-name {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+.results-container .meal-container .meal-image {
+  max-width: 100%;
   height: auto;
   border-radius: 5px;
-  border: 1px solid black;
-  cursor: pointer;
+}
+.results-container .no-results {
+  font-size: 1.5em;
+  color: #d9534f;
+  text-align: center;
+  width: 100%;
 }
 
 .bcg {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 100vw;
-  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   display: none;
 }
 
 .modal {
-  background-color: whitesmoke;
-  color: black;
-  border-radius: 10px;
-  border: 2px solid darkgray;
-  width: 800px;
-  height: 900px;
-  display: none;
-  position: relative;
-}
-
-#close-button {
+  background-color: #fff;
   position: absolute;
-  font-size: 25px;
-  font-weight: bold;
-  top: 20px;
-  right: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -28%);
+  width: 90%;
+  max-width: 700px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: none;
+  z-index: 1000;
+}
+.modal #close-button {
   cursor: pointer;
+  font-size: 25px;
+  float: right;
+  color: #333;
+}
+.modal #close-button:hover {
+  color: #d9534f;
+}
+.modal .modal-content {
+  text-align: center;
+}
+.modal .modal-content .modal-title {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+.modal .modal-content .modal-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.modal .modal-content h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: #007bff;
+}
+.modal .modal-content .modal-ingredients {
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.modal .modal-content .modal-ingredients li {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.modal .modal-content .modal-instructions {
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
