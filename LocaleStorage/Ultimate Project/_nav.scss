@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px auto 0px ;
+  margin: 0px auto 0px;
   position: relative;
   top: 50px;
   width: 1200px;
@@ -22,5 +22,12 @@
     font-weight: bold;
     line-height: 19.78px;
     letter-spacing: 0.01em;
+
+    p {
+      &:hover {
+        cursor: pointer;
+        color: #565656;
+      }
+    }
   }
 }
