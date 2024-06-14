@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto 0px ;
+  position: relative;
+  top: 50px;
+  width: 1200px;
+  height: 35px;
+
+  .nav-logo {
+    font-size: 27.15px;
+    line-height: 33.07px;
+    #logo-A {
+      font-weight: 700;
+    }
+  }
+  .menu {
+    display: flex;
+    gap: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19.78px;
+    letter-spacing: 0.01em;
+  }
+}
