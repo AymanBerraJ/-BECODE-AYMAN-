@@ -7,6 +7,7 @@
   margin-left: auto;
   position: relative;
   top: 116px;
+  // display: none;
 
   .text {
     position: relative;
@@ -82,5 +83,53 @@
     }
   }
 }
-// Section 2
 
+// Section Modal
+
+.modal1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #2639ED;
+  border-radius: 10px;
+  width: 600px;
+  min-height: 340px;
+  z-index: 1000;
+  display: none;
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 5px;
+    }
+
+    input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
