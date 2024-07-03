@@ -34,8 +34,4 @@ const part = require('./part');
 //     writeStream.write(chunk)
 // })
 
-const http = require('http');
 
-http.createServer(function(req, res){
-    console.log('Listening for requests on port 3000');
-}).listen(3000);
