@@ -1,0 +1,9 @@
+{
+    "routes": [
+      { "route": "/", "title": "Accueil" },
+      { "route": "/about", "title": "À propos" },
+      { "route": "/contact", "title": "Contactez-nous" },
+      { "route": "/Valorant", "title": "Joins-Nous" }
+    ]
+  }
+  
