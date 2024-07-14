@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%- include('partials/head.ejs', { title : title}) %>
+  </head>
+  <body>
+    <form action="/add" method="post">
+      <label for="firstName">First Name</label>
+      <input id="firstName" name="firstName" type="text" placeholder="First Name" required/>
+
+      <label for="lastName">Last Name</label>
+      <input id="lastName" name ="lastName" type="text" placeholder="Last Name" required/>
+      
+      <label for="age">Age</label>
+      <input id="age" name="age" type="number" placeholder="Age" required/>
+
+      <button type="submit">Save</button>
+    </form>
+    <a href="/">Retour à la liste des membres</a>
+  </body>
+</html>
