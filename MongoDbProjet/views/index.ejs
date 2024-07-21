@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('partials/head.ejs', { title : title}) %>
+</head>
+<body>
+
+    <h1><%= title %></h1>
+    <form action="/" method="post">
+        <label for="name"></label>
+        <input type="text" id="name" name="name" placeholder="add a task" required><br><br>
+        <button type="submit">Add</button>
+    </form>
+
+
+    <h2>Todo List</h2>
+    <ul>
+        <% tasks.forEach((task) => { %>
+            <li>
+                <%= task.name %>
+                <form action="/<%= task._id %>?_method=DELETE" method="POST" style="display:inline;">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
