@@ -20,9 +20,9 @@
         <% users.forEach((user, index) => { %>
             <li>
                 <%= user %>
-                <form action="/" method="post" style="display:inline;">
+                <form action="/" method="delete" style="display:inline;">
                     <input type="hidden" name="index" value="<%= index %>">
-                    <button type="submit">Supprimer</button>
+                    <button type="submit">Delete</button>
                 </form>
             </li>
         <% }) %>
