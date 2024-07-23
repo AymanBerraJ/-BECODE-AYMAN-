@@ -1,13 +1,10 @@
 const express = require("express");
 const app = express();
-const fs = require("fs");
 const http = require("http");
-const path = require("path");
 const { connectToDb, getDb } = require("./db");
 const { ObjectId } = require("mongodb");
 const bodyParser = require("body-parser");
 const methodOverride = require("method-override");
-const root = __dirname;
 const port = 3000;
 
 app.set("view engine", "ejs");
