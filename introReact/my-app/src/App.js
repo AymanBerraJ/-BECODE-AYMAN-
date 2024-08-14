@@ -38,7 +38,8 @@ function App() {
     const newArray = tasks.filter(task => task.id !== id)
     setTasks(newArray)
   }
-
+ 
+  // no more function
 
 
   return (
