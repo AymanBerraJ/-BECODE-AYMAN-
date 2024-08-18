@@ -21,7 +21,7 @@ function App() {
   function addTask() {
     if (!newTask) {
       alert("Enter a task");
-      return;
+      return
     }
 
     const task = {
