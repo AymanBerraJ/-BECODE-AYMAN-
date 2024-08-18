@@ -1,71 +1,55 @@
-import React, {useState} from "react";
-import "./App.css";
+import React, { useState, useEffect } from "react";
+// import { v4 as uuidv4 } from "uuid";
+import Form from "./Form";
+import TodoList from "./Todolist";
 
 function App() {
-
   // useState
+  const [newTask, setNewTask] = useState("");
 
-  const [newTask, setNewTask] = useState('')
-  const [tasks, setTasks] = useState([])
+  const [tasks, setTasks] = useState(() => {
+    const localData = localStorage.getItem("Tasks");
+    return localData ? JSON.parse(localData) : [];
+  });
+
+  // Save todos to localStorage
+  useEffect(() => {
+    localStorage.setItem("Tasks", JSON.stringify(tasks));
+  }, [tasks]); // <<- look here
 
   // function add
-
   function addTask() {
-    
-
-    if(!newTask){
-      alert('Enter a task')
-      return
+    if (!newTask) {
+      alert("Enter a task");
+      return;
     }
 
     const task = {
       id: Math.floor(Math.random() * 1000),
-      value: newTask
-    }
+      value: newTask,
+    };
 
-    setTasks(oldList => [...oldList, task])
-    setNewTask('')
-
-    console.log(tasks);
-    
-    
+    setTasks((oldList) => [...oldList, task]);
+    setNewTask("");
   }
 
   // function delete
-
   function deleteTask(id) {
-
-    const newArray = tasks.filter(task => task.id !== id)
-    setTasks(newArray)
+    const newArray = tasks.filter((task) => task.id !== id);
+    setTasks(newArray);
   }
- 
-  // no more function
-
 
   return (
     <div className="App">
-
-      <h1> Todo List App</h1>
-
-      <input
-      type="text"
-      placeholder="Enter a Task..."
-      onChange={e => setNewTask(e.target.value)}
+      <h1>Todo List App</h1>
+      <Form
+        newTask={newTask}
+        setNewTask={setNewTask}
+        addTask={addTask}
       />
-
-      <button onClick={() => addTask()}>Click</button>
-
-      <ul>
-        {tasks.map(task => {
-          return(
-            <li key={task.id}>{task.value} <button onClick={() => deleteTask(task.id)}>❌</button></li>
-          )
-        })}
-      </ul>
+      <TodoList tasks={tasks} deleteTask={deleteTask}/>
     </div>
-
   );
 }
 
 export default App;
-
