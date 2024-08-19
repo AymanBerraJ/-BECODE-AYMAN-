@@ -1,22 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-import emojiData from './json/emojis.json'; // Chemin relatif vers le fichier JSON
-
-export default function Form({}) {
-
-  
-
-
+export default function Form({ filteredEmojis }) {
 
   return (
     <div>
       <h1>Liste des Emojis</h1>
       <ul>
-        {emojiData.map((item, index) => (
-          <li key={index}>
-            {item.title} - {item.symbol}
-          </li>
-        ))}
+        {filteredEmojis.length > 0 ? (
+          filteredEmojis.map((item, index) => (
+            <li key={index}>
+              {item.title} - {item.symbol}
+            </li>
+          ))
+        ) : (
+          <li>Aucun résultat trouvé</li>
+        )}
       </ul>
     </div>
   );
