@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "gh": "^2.8.9"
+    "gh": "^2.8.9",
+    "react-markdown": "^9.0.1"
   }
 }
