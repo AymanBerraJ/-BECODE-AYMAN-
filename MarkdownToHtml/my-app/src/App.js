@@ -26,7 +26,7 @@ function App() {
     setText(`*${text}*`);
   };
   const line = () => {
-    setText(`${text}\n---\n`);
+    setText(`${text}---\n`);
   };
 
   return (
@@ -77,7 +77,7 @@ function App() {
           </button>
         </div>
         <div
-          className="p-6 border border-gray-300 rounded-md shadow-sm bg-gray-50 text-gray-800"
+          className="p-10 border border-gray-300 rounded-md shadow-sm bg-gray-50 text-gray-800"
           dangerouslySetInnerHTML={createMark()}
         ></div>
       </div>
