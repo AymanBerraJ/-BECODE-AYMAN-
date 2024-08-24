@@ -17,10 +17,10 @@ const Identification = () => {
       onSubmit={values => {
         // Stocker les valeurs dans localStorage ou context
         localStorage.setItem('userDetails', JSON.stringify(values));
-        navigate.push('/review');
+        navigate('/review');
       }}
     >
-<Form className="flex justify-center w-full h-full border-4">
+<Form className="flex items-center justify-center h-screen border-4 bg-gradient-to-r from-gray-500 via-blue-500 to-gray-500 w-full">
   <div className="m-8 p-6 bg-gray-400 w-1/2 rounded-lg shadow-lg">
     <div className="flex flex-col text-center p-2 space-y-4">
       <div>
